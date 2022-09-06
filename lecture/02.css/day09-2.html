@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1> 디자인</h1>
+    <table class ="table-a">
+        <colgroup>
+            <col width="100px" />
+            <col width="100px" />
+            <col width="300px" />
+            <col width="500px" />
+
+        </colgroup>
+
+        <thead>
+            <tr><th>이름</th><th>나이</th><th>연락처</th><th>주소</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>박시은</td> <td>24</td> <td>010</td> <td>서울시</td></tr>
+            <tr><td>방시은</td> <td>24</td> <td>010</td> <td>전주시</td></tr>
+            <tr><td>변시은</td> <td>24</td> <td>010</td> <td>울산시</td></tr>
+            <tr><td>마시은</td> <td>24</td> <td>010</td> <td>성남시</td></tr>
+            <tr><td>이시은</td> <td>24</td> <td>010</td> <td>부산시</td></tr>
+            </tbody>
+
+
+    <h1>CSS 디자인</h1>
+    <table class ="table-b">
+        <colgroup>
+            <col width="100px" />
+            <col width="100px" />
+            <col width="300px" />
+            <col width="500px" />
+
+        </colgroup>
+
+        <thead>
+            <tr><th>이름</th><th>나이</th><th>연락처</th><th>주소</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>박시은</td> <td>24</td> <td>010</td> <td class="t-addr">서울시</td></tr>
+            <tr><td>방시은</td> <td>24</td> <td>010</td> <td class="t-addr">전주시</td></tr>
+            <tr><td>변시은</td> <td>24</td> <td>010</td> <td class="t-addr">울산시</td></tr>
+            <tr><td>마시은</td> <td>24</td> <td>010</td> <td class="t-addr">성남시</td></tr>
+            <tr><td>이시은</td> <td>24</td> <td>010</td> <td class="t-addr">부산시</td></tr>
+        </tbody>
+</body>
+
+<style>
+    h1{
+        margin-top:50px;
+    }
+    /* 테이블 B 스타일 설정 */
+    .table-b{
+        display :block;
+        /* border-collapse: collapse; */
+        border-radius:5px;
+        width:fit-content;
+        overflow:hidden;
+
+    }
+    .table-b thead tr{
+       background-color: rgb(119,119,218);
+        color :white0
+    }
+    .table-b td{border:none;}
+    .table-b tr{
+        background-color: rgb(240,240,240);
+        border-bottom:1px solid gray;
+        text-align : center;
+        line-height : 50px;
+        color : rgb(50,50,50,);
+    }
+    .table-b .t-addr{
+        text-align:left;
+        padding-left : 10px;
+        text-decoration:underline;
+        font-weight:800;
+        color : #7a7aff;
+    }   
+    /* 짝수행(row)들만 배경 색상 바꾸기 */
+    .table-b tr:nth-child(even){
+        background-color :rgb(213,230,255);
+    }
+</style>
