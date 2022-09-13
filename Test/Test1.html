@@ -1,0 +1,65 @@
+<body>
+    <h2>background-attachement</h2>
+
+    <div class="a">
+        <h1>scroll</h1>
+        <p>배경을 요소 자체에 고정</p>
+        <p>콘텐츠와 함께 스크롤 되지 않습니다</p>
+        <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+        <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+        <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+    </div>
+        <div class="b">
+            <h1>fixed</h1>
+            <p>배경을 뷰포트에 고정</p>
+            <p>화면에 스크롤이 있어도 스크롤 안함</p>
+            <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+            <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+            <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+        </div>
+            <div class="c">
+                <h1>local</h1>
+                <p>배경을 콘텐츠에 고정</p>
+                <p>콘텐츠와 함꼐 배경도 스크롤 됨</p>
+                <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+                <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+                <p>월요일은 싫어요</p><p>목요일은 너무 힘들어요</p><p>금요일이 오면 모든게 행복하답니다.</p>
+            </div>
+        </section>
+    </body>
+
+<style>
+    section{
+        width: 900px;
+        height : 600px
+    }
+    body{
+        padding : 0;
+        margin : 0;
+        padding-bottom: 2000px;
+
+    }
+    div{
+        display : inline-block;
+        border : 1px solid gray;
+        width : 30%;
+        height : 500px;
+        overflow : auto; 
+        background-image : url("../lecture/02.css/day12-5.jpg");
+        background-repeat : no-repaet;
+        line-height : 80px;
+        font-size : 18px;
+
+    }
+
+    .a{background-attachment:scroll;
+
+    }
+
+    .b{
+        background-attachment:fixed;
+    }
+    .c{
+        background-attachment:local;
+    }
+</style>
